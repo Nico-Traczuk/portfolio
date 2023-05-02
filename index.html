@@ -9,7 +9,7 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -249,7 +249,7 @@
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <form method="post" name="sentMessage" id="contactForm" novalidate="novalidate">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
                                     <input type="text" class="form-control p-4" id="name" placeholder="Ingrese su nombre"
@@ -276,6 +276,7 @@
                             <div>
                                 <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Enviar mensaje</button>
                             </div>
+                            <div id="alerta"></div>
                         </form>
                     </div>
                 </div>
@@ -292,7 +293,7 @@
                 <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/nicol%C3%A1s-traczuk-639a76256/" target="_blank" ><i class="fab fa-linkedin-in"></i></a>
                 <a class="btn btn-light btn-social" href="https://github.com/Nico-Traczuk" target="_blank"><i class="fab fa-github"></i></a>
             </div>
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Domain Name</a>. Todo los derechos reservados.
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Nicolas Traczuk</a>. Todo los derechos reservados.
             </p>
         </div>
     </div>
@@ -315,11 +316,13 @@
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <!-- <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script> -->
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
